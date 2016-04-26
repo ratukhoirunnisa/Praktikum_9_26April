@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i, angka, pangkat, jumlah;
+    i=1;
+    jumlah=1;
+
+    cout << "Masukkan angka     :";
+    cin >> angka;
+    cout << "Masukkan pangkat   :";
+    cin >> pangkat;
+
+    do
+    {
+        jumlah=jumlah*angka;
+        i++;
+    }
+    while (i <= pangkat);
+    cout << endl << "Hasil  " << jumlah << endl;
+
+    return 0;
+}
